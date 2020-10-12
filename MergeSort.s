@@ -97,7 +97,7 @@ endDiv:
 
 	# prepare argument to do right mergeSort
 	# mergeSort(&arr(a0), mid(a1)+1, end(a2))
-	lw	a0, 4(sp)	# a0 <= $addr	(sp+4)
+	lw	a0, 4(sp)	# a0 <= &addr	(sp+4)
 	lw	a1, 16(sp)	# a1 <= mid	(sp+16)
 	addi	a1, a1, 1	# a1 <= mid + 1
 	lw	a2, 12(sp)	# a2 <= end	(sp+12)
@@ -105,7 +105,7 @@ endDiv:
 
 	# prepare argument to do merge
 	# mergeSort(&arr(a0), start(a1), mid(a2), end(a3))
-	lw	a0, 4(sp)	# a0 <= $addr	(sp+4)
+	lw	a0, 4(sp)	# a0 <= &addr	(sp+4)
 	lw	a1, 8(sp)	# a1 <= start	(sp+8)
 	lw	a2, 16(sp)	# a2 <= mid	(sp+16)
 	lw	a3, 12(sp)	# a3 <= end	(sp+12)
