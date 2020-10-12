@@ -4,7 +4,8 @@
 void merge(int *arr, int start, int mid, int end)
 {
 	int total = end - start + 1;
-	int *array = (int *)malloc(sizeof(int)*total);
+	//int *array = (int *)malloc(sizeof(int)*total);
+	int array[total];
 
 	for(int i = 0; i< total;i++)
 		array[i] = arr[i+start];
